@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-.image {
+.image,.box {
   /* 背景色 */
   background-color: lightblue;
   /* 內容 */
@@ -40,6 +40,11 @@
 
   /* 倒圓角 */
   border-radius: 20px;
+
+  /* 水平、垂直對齊 */
+  text-align: center;
+  line-height: 250px;
+  margin: 20px auto;
 }
 
 .circle {
