@@ -12,6 +12,9 @@
       rel="stylesheet"
     />
     <style>
+      /* import google fonts */
+      /* @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap'); */
+
       @font-face {
         src: url(./fonts/Cursive_Script.ttf);
         font-family: "Cursive_Script";
@@ -34,6 +37,24 @@
       .google2 {
         font-family: "Roboto";
       }
+
+      .font4 {
+        font-style: normal;
+      }
+
+      .font5 {
+        font-style: italic;
+      }
+
+      .all {
+        /* text-decoration: 線條位置 + 線條樣式 + 線條顏色; */
+        /* text-decoration-line: ; */
+        /* text-decoration-style: ; */
+        text-decoration: overline wavy salmon;
+      }
+      .none {
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -46,6 +67,10 @@
     <div class="google1">Google Font 字型 123456</div>
     <div class="google2">Google Font 字型 123456</div>
     <h2>文字樣式</h2>
+    <p class="font4">段落元素</p>
+    <p class="font5">段落元素</p>
     <h2>文字裝飾(速寫) line + style + color</h2>
+    <div class="all">區塊容器</div>
+    <a href="#" class="none">超連結</a>
   </body>
 </html>
