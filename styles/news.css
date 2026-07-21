@@ -1,5 +1,12 @@
 /* CSS程式語言 */
-h1{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url(./news.css);
+
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+h1 {
   font-size: 40px;
-  color:navy;
+  color: navy;
 }
