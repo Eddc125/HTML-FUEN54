@@ -51,6 +51,31 @@
 
       /* div.box p > a {
       } */
+
+      /* ID選擇器 */
+      /* 
+        #ID屬性值{
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+        }
+      */
+      #theP1 {
+        color: navy;
+        font-size: 40px;
+      }
+
+      /* 全域選擇器 */
+      /* 
+        *{
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+          CSS屬性名稱: CSS屬性值;
+        }
+      */
+      * {
+        font-style: italic;
+      }
     </style>
   </head>
   <body>
@@ -70,5 +95,14 @@
       <p class="box">p元素身上有class="box"</p>
       <p>p元素 <span class="box">span容器身上有class="box"</span></p>
     </div>
+
+    <hr />
+    <p id="theP1">段落元素</p>
+    <p id="theP1">段落元素</p>
+
+    <script>
+      const p1 = document.querySelector("#theP1");
+      p1.style.color = "purple";
+    </script>
   </body>
 </html>
