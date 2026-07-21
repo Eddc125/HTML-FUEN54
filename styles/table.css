@@ -21,6 +21,10 @@ tbody tr:nth-child(2n + 1) {
   background-color: #c8c8c8;
 }
 
-tbody tr:nth-child(2n) {
+/* tbody tr:nth-child(2n) {
   background-color: lightblue;
+} */
+
+tbody tr:hover{
+  background-color: pink;
 }
