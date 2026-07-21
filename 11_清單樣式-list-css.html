@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清單樣式</title>
+    <link rel="stylesheet" href="./styles/list.css">
+  </head>
+  <body>
+    <a href="./01_HTML文件結構-html-skeleton.html">01_HTML文件結構</a>
+    <a href="./02_文字元素-text.html">02_文字元素</a>
+    <a href="./03_區塊與行內元素-blockAndInline.html">03_區塊與行內元素</a>
+    <a href="./04_圖片元素-image.html">04_圖片元素</a>
+    <a href="./05_清單元素-list.html">05_清單元素</a>
+    <a href="./06_超連結元素-anchor.html">06_超連結元素</a>
+    <br />
+    <h1>清單元素</h1>
+    <h2>項目清單(無順序)</h2>
+    <ul class="ul1">
+      <li>單一項目內容-1</li>
+      <li>單一項目內容-2</li>
+      <li>單一項目內容-3</li>
+      <li>單一項目內容-4</li>
+      <li>單一項目內容-5</li>
+    </ul>
+
+    <hr />
+    <h2>序號清單(有順序)</h2>
+    <ol class="ol1">
+      <!-- emmet: li{單一項目內容-$}*5 -->
+      <li>單一項目內容-1</li>
+      <li>單一項目內容-2</li>
+      <li>單一項目內容-3</li>
+      <li>單一項目內容-4</li>
+      <li>單一項目內容-5</li>
+    </ol>
+
+    <hr />
+    <h2>巢狀清單</h2>
+    <ul>
+      <li>
+        演出日期：
+        <ul class="ul2">
+          <li>2026/05/22（五）20:03 #加場</li>
+          <li>2026/05/23（六）19:26</li>
+          <li>2026/05/24（日）17:09</li>
+        </ul>
+      </li>
+      <li>演出地點：高雄流行音樂中心 海音館</li>
+    </ul>
+
+    <ul>
+      <li>單一項目內容-1</li>
+      <li>
+        單一項目內容-2
+        <ul>
+          <li>單一項目內容-2-1</li>
+          <li>單一項目內容-2-2</li>
+          <li>單一項目內容-2-3</li>
+          <li>
+            單一項目內容-2-4
+            <ul>
+              <li>單一項目內容-2-4-1</li>
+              <li>單一項目內容-2-4-2</li>
+              <li>單一項目內容-2-4-3</li>
+            </ul>
+          </li>
+          <li>單一項目內容-2-5</li>
+        </ul>
+      </li>
+      <li>單一項目內容-3</li>
+    </ul>
+
+    <hr />
+    <!-- wayback mechine: https://web.archive.org/web/20220910221921/https://www.apple.com/iphone-14-pro/ -->
+    <h2>定義清單</h2>
+    <dl>
+      <dt>項目內容</dt>
+      <dd>內容說明</dd>
+      <dt>項目內容</dt>
+      <dd>內容說明</dd>
+      <dd>內容說明</dd>
+      <dd>內容說明</dd>
+      <dt>項目內容</dt>
+      <dd>內容說明</dd>
+      <dt>項目內容</dt>
+      <dd>
+        <ul>
+          <li>內容說明</li>
+          <li>內容說明</li>
+          <li>內容說明</li>
+        </ul>
+      </dd>
+    </dl>
+  </body>
+</html>
