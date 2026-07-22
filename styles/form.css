@@ -49,6 +49,11 @@ textarea {
 /* tag[html屬性=html屬性值] */
 input[type="text"],
 input[type="password"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="time"],
+input[type="month"],
+input[type="week"],
 textarea,
 select {
   width: calc(100% - 100px);
