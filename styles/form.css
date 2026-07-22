@@ -1,3 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.q1 {
+  border-bottom: 1px dashed gray;
+  padding-bottom: 20px;
+  margin: 20px;
+}
+
+.t1 {
+  float: left;
+  width: 100px;
+  /* background-color: pink; */
+  text-align-last: justify;
+  margin-right: 20px;
+}
+
+.btns {
+  text-align: center;
+  margin: 20px;
+}
+
 textarea {
   resize: vertical;
 }
