@@ -66,6 +66,8 @@
       </fieldset>
       <fieldset>
         <legend>文字輸入控制項</legend>
+        <!-- 一次性驗證碼 -->
+        <!-- <input type="text" name="one-time-code" id="" inputmode="tel"> -->
         <div class="q1">
           <label for="email" class="t1">email</label>
           <input type="email" name="userEmail" id="email" />
@@ -82,11 +84,42 @@
         </div>
         <div class="q1">
           <label for="tel" class="t1">tel</label
-          ><input type="tel" name="userName" id="tel" />
+          ><input type="tel" name="userTel" id="tel" />
         </div>
         <div class="q1">
           <label for="search" class="t1">search</label>
           <input type="search" name="userSearch" id="search" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>其餘控制項</legend>
+        <div class="q1">
+          <label for="color" class="t1">color</label>
+          <input type="color" name="userColor" value="#19bd53" id="color" />
+        </div>
+        <div class="q1">
+          <label for="range" class="t1">range</label>
+          <input
+            type="range"
+            name="userRange"
+            id="range"
+            value="80"
+            min="0"
+            max="100"
+            step="20"
+          />
+        </div>
+        <div class="q1">
+          <label for="number" class="t1">number</label>
+          <input
+            type="number"
+            name="userNumber"
+            id="number"
+            value="15"
+            min="0"
+            max="30"
+            step="5"
+          />
         </div>
       </fieldset>
       <div class="btns">
