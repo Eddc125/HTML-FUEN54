@@ -5,7 +5,23 @@
 form {
   width: 500px;
   margin: auto;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+fieldset {
+  border: 2px solid navy;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+/* :first-child :last-child */
+fieldset > .q1:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+legend {
+  padding: 0 15px;
+  text-align: center;
 }
 
 .q1 {
@@ -33,6 +49,10 @@ textarea {
 /* tag[html屬性=html屬性值] */
 input[type="text"],
 input[type="password"],
-textarea {
+textarea,
+select {
   width: calc(100% - 100px);
+  padding: 3px 10px;
+  border: 1px solid #999;
+  border-radius: 10px;
 }
