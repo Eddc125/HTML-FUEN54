@@ -49,14 +49,66 @@
   預設文字</textarea
         >
       </div>
-      
-      
+
+      <div class="q1">
+        <span class="t1">性別</span>
+        <input type="radio" name="userGender" value="male" id="male" /><label
+          for="male"
+          >男性</label
+        >
+        <input
+          type="radio"
+          name="userGender"
+          value="female"
+          id="female"
+        /><label for="female">女性</label>
+        <input
+          type="radio"
+          name="userGender"
+          value="hidden"
+          id="hidden"
+          checked
+        /><label for="hidden">不顯示</label>
+      </div>
+
+      <div class="q1">
+        <span class="t1">複選題</span>
+        <!-- (lable[for=checkbox$]{選項$}+input:checkbox[id=checkbox$][name=userCheckbox][value=option$])*4       -->
+        <lable for="checkbox1">選項1</lable>
+        <input
+          type="checkbox"
+          name="userCheckbox"
+          id="checkbox1"
+          value="option1"
+        />
+        <lable for="checkbox2">選項2</lable>
+        <input
+          type="checkbox"
+          name="userCheckbox"
+          id="checkbox2"
+          value="option2"
+        />
+        <lable for="checkbox3">選項3</lable>
+        <input
+          type="checkbox"
+          name="userCheckbox"
+          id="checkbox3"
+          value="option3"
+        />
+        <lable for="checkbox4">選項4</lable>
+        <input
+          type="checkbox"
+          name="userCheckbox"
+          id="checkbox4"
+          value="option4"
+        />
+      </div>
 
       <div class="btns">
         <!-- 按鈕 -->
         <!-- <input type="submit" value="送出" /> -->
         <!-- <input type="reset"  /> -->
-        <button type="submit" disabled>送出</button>
+        <button type="submit">送出</button>
         <button type="reset">清除</button>
         <input type="button" value="一般按鈕" />
         <button type="button">一般按鈕</button>
