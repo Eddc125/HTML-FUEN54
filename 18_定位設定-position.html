@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>定位設定</title>
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
       div {
         width: 600px;
         border: 5px solid;
@@ -31,10 +34,24 @@
       .s {
         color: rgb(22, 17, 17);
       }
+
+      a {
+        text-decoration: none;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        width: 70px;
+        height: 70px;
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 70px;
+      }
     </style>
   </head>
   <body>
-    <h1>定位設定</h1>
+    <h1 id="top">定位設定</h1>
     <div class="r">relative</div>
     <div class="a">absolute</div>
     <div class="f">fixed</div>
@@ -45,5 +62,7 @@
       <div class="a">子層absolute</div>
     </div>
     <section style="height: 500vh"></section>
+
+    <a href="#top">TOP</a>
   </body>
 </html>
