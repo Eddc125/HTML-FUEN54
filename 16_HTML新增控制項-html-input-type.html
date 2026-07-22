@@ -70,7 +70,14 @@
         <!-- <input type="text" name="one-time-code" id="" inputmode="tel"> -->
         <div class="q1">
           <label for="email" class="t1">email</label>
-          <input type="email" name="userEmail" id="email" />
+          <input
+            type="email"
+            name="userEmail"
+            id="email"
+            required
+            autofocus
+            autocomplete="email"
+          />
         </div>
         <div class="q1">
           <label for="url" class="t1">url</label>
@@ -79,12 +86,20 @@
             name="userUrl"
             id="url"
             placeholder="https://www.google.com"
-            value="https://"
+            value="https://www.google.com"
+            readonly
           />
         </div>
         <div class="q1">
           <label for="tel" class="t1">tel</label
-          ><input type="tel" name="userTel" id="tel" />
+          ><input
+            type="tel"
+            name="userTel"
+            id="tel"
+            pattern="^[0][9]\d{8}$"
+            maxlength="10"
+            required
+          />
         </div>
         <div class="q1">
           <label for="search" class="t1">search</label>
