@@ -9,7 +9,7 @@
   <body>
     <h1>表單元素</h1>
     <!-- ?key=value&key=value -->
-    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+    <form action="#" method="get" enctype="multipart/form-data">
       <div class="q1">
         <!-- 單行文字 -->
         <label for="myName" class="t1">姓名</label>
@@ -75,33 +75,54 @@
         <span class="t1">複選題</span>
         <!-- (input:checkbox[id=checkbox$][name=userCheckbox][value=option$]+lable[for=checkbox$]{選項$})*4 -->
         <input
-        type="checkbox"
-        name="userCheckbox"
-        id="checkbox1"
-        value="option1"
+          type="checkbox"
+          name="userCheckbox"
+          id="checkbox1"
+          value="option1"
         />
         <lable for="checkbox1">選項1</lable>
         <input
-        type="checkbox"
-        name="userCheckbox"
-        id="checkbox2"
-        value="option2"
+          type="checkbox"
+          name="userCheckbox"
+          id="checkbox2"
+          value="option2"
         />
         <lable for="checkbox2">選項2</lable>
         <input
-        type="checkbox"
-        name="userCheckbox"
-        id="checkbox3"
-        value="option3"
+          type="checkbox"
+          name="userCheckbox"
+          id="checkbox3"
+          value="option3"
         />
         <lable for="checkbox3">選項3</lable>
         <input
-        type="checkbox"
-        name="userCheckbox"
-        id="checkbox4"
-        value="option4"
+          type="checkbox"
+          name="userCheckbox"
+          id="checkbox4"
+          value="option4"
         />
         <lable for="checkbox4">選項4</lable>
+      </div>
+
+      <!-- https://codepen.io/pamcy/pen/Jvmavx -->
+      <div class="q1">
+        <label for="myCity" class="t1">縣市</label>
+        <select name="userCity" id="myCity">
+          <!-- <select name="userCity" id="myCity" multiple size="7"> -->
+          <!-- option[value=city$]{縣市$}*6 -->
+          <option value="default" hidden>請選擇</option>
+          <option value="city1">縣市1</option>
+          <option value="city2">縣市2</option>
+          <option value="city3" selected>縣市3</option>
+          <option value="city4">縣市4</option>
+          <option value="city5">縣市5</option>
+          <option value="city6">縣市6</option>
+        </select>
+      </div>
+
+      <div class="q1">
+        <label for="myFile" class="t1">檔案上傳</label>
+        <input type="file" name="userFile" id="myFile" multiple />
       </div>
 
       <div class="btns">
