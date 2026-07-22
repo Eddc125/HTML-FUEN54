@@ -9,7 +9,7 @@ form {
 }
 
 .q1 {
-  border-bottom: 1px dashed gray;
+  border-bottom: 2px dashed gray;
   padding-bottom: 20px;
   margin: 20px;
 }
@@ -17,9 +17,8 @@ form {
 .t1 {
   float: left;
   width: 100px;
-  /* background-color: pink; */
   text-align-last: justify;
-  margin-right: 20px;
+  padding-right: 20px;
 }
 
 .btns {
@@ -29,4 +28,11 @@ form {
 
 textarea {
   resize: vertical;
+}
+
+/* tag[html屬性=html屬性值] */
+input[type="text"],
+input[type="password"],
+textarea {
+  width: calc(100% - 100px);
 }
