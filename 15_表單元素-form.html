@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1>表單元素</h1>
+    <!-- ?key=value&key=value -->
     <form action="#" method="get" enctype="application/x-www-form-urlencoded">
       <!-- 單行文字 -->
       <label for="myName">姓名</label>
@@ -30,7 +31,27 @@
         maxlength="8"
         minlength="6"
       />
+      <br />
+      <!-- 多行文字 -->
+      <label for="myMemo">備忘錄</label>
+      <textarea
+        name="userMemo"
+        id="myMemo"
+        placeholder="提示文字"
+        maxlength="100"
+        cols="30"
+        rows="10"
+      >
+預設文字</textarea
+      >
 
+      <!-- 按鈕 -->
+      <!-- <input type="submit" value="送出" /> -->
+      <!-- <input type="reset"  /> -->
+      <button type="submit" disabled>送出</button>
+      <button type="reset">清除</button>
+      <input type="button" value="一般按鈕" />
+      <button type="button">一般按鈕</button>
     </form>
   </body>
 </html>
