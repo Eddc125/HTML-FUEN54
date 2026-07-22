@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 600px;
+        border: 5px solid;
+        padding: 20px;
+      }
+      .r {
+        color: navy;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+      .a {
+        color: salmon;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .f {
+        color: blueviolet;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      .s {
+        color: rgb(22, 17, 17);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>定位設定</h1>
+    <div class="r">relative</div>
+    <div class="a">absolute</div>
+    <div class="f">fixed</div>
+    <div class="s">static</div>
+
+    <div class="r">
+      父層relative
+      <div class="a">子層absolute</div>
+    </div>
+    <section style="height: 500vh"></section>
+  </body>
+</html>
